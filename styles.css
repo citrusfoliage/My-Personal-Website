@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'NIS-JTC-Win-M9';
-    src: url(Fonts/NIS-JTC-Win-M9.ttf) format(truetype);
+    src: url(./NIS-JTC-Win-M9.ttf) format(truetype);
 }
 @font-face {
     font-family: 'NIS-JTC-Win-M9-Condensed';
-    src: url(Fonts/NIS-JTC-Win-M9-Condensed.ttf) format(truetype);
+    src: url(./NIS-JTC-Win-M9-Condensed.ttf) format(truetype);
 }
 @font-face {
     font-family: 'Century Schoolbook';
-    src: url(Fonts/SCHLBKB.TTF) format(truetype);
+    src: url(./SCHLBKB.TTF) format(truetype);
 }
 @font-face {
     font-family: 'FOT-Matisse Pro EB';
-    src: url(Fonts/FOT-Matisse\ Pro\ EB.otf) format(opentype);
+    src: url(./FOT-Matisse-Pro-EB.otf) format(opentype);
 }
 
 body {
@@ -64,7 +64,7 @@ body {
 
 .home {
     height: 100vh;
-    background: url(Images/home-background.jpg) no-repeat;
+    background: url(./home-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -103,7 +103,7 @@ body {
 
 .about {
     height: 100vh;
-    background: url(Images/about-background.png) no-repeat;
+    background: url(./about-background.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -165,7 +165,7 @@ body {
 
 .contact {
     height: 100vh;
-    background: url(Images/contact-background.jpg) no-repeat;
+    background: url(./contact-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -251,7 +251,7 @@ button:hover {
 
 .blog {
     height: 100vh;
-    background: url(Images/blog-background.png) no-repeat;
+    background: url(./blog-background.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -298,7 +298,7 @@ button:hover {
 
 .website-launch {
     height: 100vh;
-    background: url(Images/blog-background.png) no-repeat;
+    background: url(./blog-background.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -351,7 +351,7 @@ button:hover {
 
 .projects {
     height: 100vh;
-    background: url(Images/projects-background.png) no-repeat;
+    background: url(./projects-background.png) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
