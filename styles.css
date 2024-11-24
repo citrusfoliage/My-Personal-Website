@@ -1,0 +1,456 @@
+@font-face {
+    font-family: 'NIS-JTC-Win-M9';
+    src: url(Fonts/NIS-JTC-Win-M9.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    src: url(Fonts/NIS-JTC-Win-M9-Condensed.ttf) format(truetype);
+}
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url(Fonts/SCHLBKB.TTF) format(truetype);
+}
+@font-face {
+    font-family: 'FOT-Matisse Pro EB';
+    src: url(Fonts/FOT-Matisse\ Pro\ EB.otf) format(opentype);
+}
+
+body {
+    color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'FOT-Matisse Pro EB';
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo hover,
+.logo a.active {
+    color: white;
+}
+
+.navbar a {
+    font-family: 'NIS-JTC-Win-M9';
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: white;
+}
+
+/* Home */
+
+.home {
+    height: 100vh;
+    background: url(Images/home-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.home-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+} 
+
+.home-content h3 {
+    font-family: 'NIS-JTC-Win-M9';
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+.home-content p {
+    position: relative;
+    font-family: 'Century Schoolbook';
+    font-size: 30px;
+    margin: 20px 0 40px;
+}
+
+/* About Me */
+
+.about {
+    height: 100vh;
+    background: url(Images/about-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+}
+
+.about-content h3 {
+    font-family: 'Century Schoolbook';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0 40px;
+}
+
+/* Social Links */
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.home-sci a:hover,
+.home-sci a.active {
+    color: white;
+}
+
+/* Contact Me */
+
+.contact {
+    height: 100vh;
+    background: url(Images/contact-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.contact-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.contact-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+}
+
+input {
+    background-color: black;
+    width: 50%;
+    margin-left: 1%;
+    font-size: 20px;
+    padding: 13px 13px;
+    border-radius: 0px;
+    border-color: gray;
+    margin-bottom: 20px;
+    font-family: 'Century Schoolbook';
+    color: white;
+}
+
+textarea {
+    background-color: black;
+    width: 100%;
+    margin-left: 1%;
+    font-size: 20px;
+    padding: 13px 13px;
+    border-radius: 0px;
+    border-color: black;
+    margin-bottom: 25px;
+    font-family: 'Century Schoolbook';
+    color: white;
+    resize: none;
+}
+
+input:focus-within {
+    outline: none;
+    border-color: gray;
+    border-width: 3px;
+    color: white;
+}
+
+textarea:focus-within {
+    outline: none;
+    border-color: gray;
+    border-width: 3px;
+    color: white;
+}
+
+button {
+    background-color: gray;
+    border-radius: 0px;
+    border-color: black;
+    font-size: 22px;
+    padding: 13px 13px;
+    text-align: center;
+    display: flex;
+    margin: auto; 
+    font-family: 'Century Schoolbook';
+}
+
+.contact-content button {
+    color: black;
+}
+
+button:hover {
+    color: white;
+}
+
+/* Blog */
+
+.blog {
+    height: 100vh;
+    background: url(Images/blog-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.blog-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.blog-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+}
+
+.blog-content h3 {
+    font-family: 'NIS-JTC-Win-M9';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0 40px;
+}
+
+.blog-post a {
+    font-family: 'FOT-Matisse Pro EB';
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0px;
+    transition: .3s;
+}
+
+.blog-post a:hover {
+    color: white
+}
+
+/* Website Launch */
+
+.website-launch {
+    height: 100vh;
+    background: url(Images/blog-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.website-launch-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.website-launch-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+}
+
+.website-launch-content h3 {
+    font-family: 'NIS-JTC-Win-M9';
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0 40px;
+}
+
+.website-launch-content p {
+    font-family: 'Century Schoolbook';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0 40px;
+}
+
+.blog-directory a {
+    font-family: 'Century Schoolbook';
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    margin: 20px 0 40px;
+}
+
+.blog-directory a:hover {
+    color: white;
+}
+
+/* Projects */
+
+.projects {
+    height: 100vh;
+    background: url(Images/projects-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.projects-content {
+    background: transparent;
+    max-width: 600px;
+}
+
+.projects-content h2 {
+    font-family: 'NIS-JTC-Win-M9-Condensed';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: black;
+} 
+
+.projects-content p {
+    position: relative;
+    font-family: 'Century Schoolbook';
+    font-size: 18px;
+    margin: 20px 0 40px;
+}
+
+.projects-list a {
+    position: relative;
+    font-family: 'Century Schoolbook';
+    font-size: 18px;
+    margin: 20px 0 40px;
+    color: black;
+}
+
+.projects-list a:hover {
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+section h1 {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
